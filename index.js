@@ -11,8 +11,8 @@ const tryAgainButton = document.getElementById("tryAgainButton");
 
 let targetColor;
 let score = 0;
-let incorrectGuesses = 0; // Track incorrect guesses
-let isGameOver = false; // Track game over state
+let incorrectGuesses = 0;
+let isGameOver = false; 
 
 // Function to generate colors with the same shade but different hue and saturation
 function generateSimilarColors(_baseColor, count) {
@@ -67,7 +67,7 @@ function generateSimilarColors(_baseColor, count) {
       gameStatus.style.color = "green";
       score++;
       scoreElement.textContent = `Score: ${score}`;
-      incorrectGuesses = 0; // Reset incorrect guesses on correct answer
+      
   
       // Check if the player has won
       if (score >= 10) {
