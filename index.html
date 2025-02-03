@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://fav.farm/🎨" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <p class="score" data-testid="score">🏆 Score: 0</p>
+        <button class="new-game-button" data-testid="newGameButton">
+          New Game
+        </button>
+      </div>
+
+      <div class="color-box" data-testid="colorBox"></div>
+
+      <p class="game-instructions" data-testid="gameInstructions">
+        Guess the correct color!
+      </p>
+
+      <p class="game-status" data-testid="gameStatus"></p>
+
+      <div class="color-options">
+        <button class="color-option" data-testid="colorOption"></button>
+        <button class="color-option" data-testid="colorOption"></button>
+        <button class="color-option" data-testid="colorOption"></button>
+        <button class="color-option" data-testid="colorOption"></button>
+        <button class="color-option" data-testid="colorOption"></button>
+        <button class="color-option" data-testid="colorOption"></button>
+      </div>
+    </div>
+
+    <div id="gameOverOverlay" class="overlay">
+      <div class="overlay-content">
+        <h2>Game Over! ✋</h2>
+        <p>You've done three incorrect guesses 👎</p>
+        <button id="tryAgainButton">Try Again</button>
+      </div>
+    </div>
+
+    <div id="congratsOverlay" class="overlay">
+      <div class="overlay-content">
+        <h2>Congratulations! 🎉</h2>
+        <p>You won the game! 🏆</p>
+        <button id="playAgainButton">Play Again</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
