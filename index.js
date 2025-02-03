@@ -41,7 +41,7 @@ function generateSimilarColors(_baseColor, count) {
     // Randomly select the target color from the similar colors
     targetColor = similarColors[Math.floor(Math.random() * similarColors.length)];
     colorBox.style.backgroundColor = targetColor;
-    newGameButton.style.backgroundColor = targetColor;
+
   
     // Assign colors to the buttons
     colorOptions.forEach((button, index) => {
@@ -77,7 +77,7 @@ function generateSimilarColors(_baseColor, count) {
     } else {
       gameStatus.textContent = "Wrong! Try again.";
       gameStatus.style.color = "red";
-      incorrectGuesses++; // Increment incorrect guesses
+      incorrectGuesses++; 
       if (incorrectGuesses >= 3) {
         showGameOverOverlay(); // End the game if the player loses three times
         return;
@@ -85,7 +85,7 @@ function generateSimilarColors(_baseColor, count) {
     }
   
     // Refresh the game after each guess
-    setTimeout(playGame, 1000); // Refresh after 1 second
+    setTimeout(playGame, 1000); 
   }
   
   // Function to convert any color format to HSL
